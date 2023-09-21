@@ -1,0 +1,9 @@
+
+Reading input into a file 
+
+METHOD 1:
+A) using cat ( cat > file_name ) - in this case file would be overwrite 
+B) using cat (cat >> filt_name) data get's appended 
+
+METHOD 2: using script (echo or -p) 
+

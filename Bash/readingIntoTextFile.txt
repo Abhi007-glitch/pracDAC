@@ -1,0 +1,29 @@
+
+Q1,Q2 - POWER OF CAT command 
+
+Q1)Reading input into a file 
+
+METHOD 1:
+A) using cat ( cat > file_name ) - in this case file would be overwrite 
+B) using cat (cat >> filt_name) data get's appended 
+
+METHOD 2: using script (echo or -p) 
+
+Q2) Appending data of one file to another file :
+    cat file1 >> file2 - append 
+    cat file1 > file2  -overwrite
+
+
+
+Q3) Counting words bytes chars lines :
+   Command ->  ( wc -<tag> )
+   a)counting number of words in a text file
+     cat text.txt | wc -w (words)
+                  | wc -c (char)
+                  | wc -l (lines)
+
+  b)counting_number of files in the directory 
+    ls -l | wc -w
+
+ 
+
