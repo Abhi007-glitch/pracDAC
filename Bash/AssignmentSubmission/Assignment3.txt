@@ -1,0 +1,56 @@
+1. Write a shell script which will generate the O/P as follows
+
+*
+**
+***
+****
+
+#!/bin/bash
+
+
+for (( i=1;i<5;i++ ))
+do
+	for(( j=1; j<=i; j++ ))
+	do
+		echo -n "*"
+	done
+	echo ""
+done
+
+2.Accept the first name, middle name, and last name of a person in variables fname, mname and lname respectively. Greet the person (take his full name) using appropriate message. 
+#!/bin/bash
+
+read -p "Enter first name: " fname
+read -p "Enter middle name: " mname
+read -p "Enter last name: " lname
+
+
+echo "Hello $fname $mname $lname, welcome to bash scripting"
+
+5.Write a script that accepts a member into MBT health club, if the weight of the person is withing the range of 30-250 Kgs.
+#!/bin/bash
+
+echo "Enter your weight in Kgs: "
+read weight
+
+if (( weight>=30 && weight<=250 ))
+	then
+		echo "Congratulations! you are eligible to become a member of the MBT health club"
+	else
+		echo "Sorry, your weight is not within the eligible range for the MBT health club"
+fi
+
+6.Write a shell script that greets the user with an appropriate message depending on the system time.
+#!/bin/bash
+
+hour=$(date +%H)
+
+if ((hour>=0 && hour<12))
+then
+	echo "Good morning, user!"
+elif ((hour>=12 && hour<17))
+then
+	echo "Good Afternoon, user!"
+else
+	echo "Good evening, user!"
+fi

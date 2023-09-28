@@ -1,0 +1,168 @@
+
+1.Develop a shell script to print the username, current date & time, and current directory.
+#! /bin/bash
+
+
+echo "Current User name is $(whoami) "
+echo "Today is $(date "+%d-%m-%Y") "
+
+echo "Current Directory is :  $(pwd)"
+
+
+2.Write a shell script to print sum of all digit of a given number.For e.g. If no is 123, sum of all its digit will be 1+2+3 = 6
+#! /bin/bash 
+
+read -p "Enter the number for which sum of digit has to be calculated : " num
+
+
+sum=0
+
+while [[ $num -gt 0 ]]
+do
+	let sum=sum+num%10
+	let num=num/10
+done
+
+echo "Sum of all digits is : $sum "
+
+3.Develop a shell script to compare three numbers and print the largest. Give the numbers from the
+command line.
+#!  /bin/bash
+
+read -p "Enter three numbers among which greatest has to be find : " num1 num2 num3
+
+
+greatest=num1
+
+if [[ $greatest -lt $num2 ]];
+then
+     greatest=$num2
+fi
+
+if [[ $greatest -lt $num3 ]];
+then 
+	greatest=$num3
+fi
+
+echo "The Greatest number is $greatest "
+
+
+
+7.Write a shell script called calculator using case structure, which takes arguments from command
+line eg., 2+3, 2*3 etc. and displays the result. It should perform the following operations:
+a.Addition
+b.Subtraction
+c.Multiplication
+d.Division
+#! /bin/bash 
+
+
+function add
+{
+  let sum=$1+$2
+  echo "Sum = $sum"
+}
+
+
+function subtract
+{
+  let sum=$1-$2
+  echo "diffrence = $sum"
+}
+
+function multiply
+{
+  let mul=$1*$2
+ echo "Product = $mul"
+
+}
+
+function divide
+{
+ let div=$1/$2
+ echo "Division result = $div"
+
+}
+
+
+
+bool=true
+
+while $bool 
+do
+	read -p "Enter two number on which mathematical operation has to be performed : " num1 num2
+	echo " Enter Id of Operation that you want to perform on inputed values"
+	echo " a. addition "
+	echo " b. substraction "
+	echo " c. Multiplication "
+	echo " d. Division "
+
+	read option
+
+	case $option in
+		a) add $num1 $num2
+			;;
+		b) subtract $num1 $num2
+			;;
+		c) multiply $num1 $num2
+			;;
+		d) divide $num1 $num2
+			;;
+		*) exit ;;
+		
+	esac
+
+done
+
+
+
+
+13.Write script to print given number in reverse order, for eg. If no is 123 it must print as 321
+#!/bin/bash
+
+echo "Enter a number: "
+read no
+
+reversed=0
+
+while [ $no -gt 0 ]
+do
+	digit=$((no%10))
+	reversed=$((reversed*10+digit))
+	no=$((no/10))
+done
+
+echo "The number in reversed order is : $reversed"
+
+
+14.Write script to print nos as 5,4,3,2,1 using while loop
+#!/bin/bash
+
+no=5
+
+while [ $no -ge 1 ]
+do
+	echo $no
+	no=$((no-1))
+done
+
+
+15.Write script to find out factorial for a given no
+#!/bin/bash
+
+echo "Enter a number: "
+read number
+
+factz=1
+
+for (( i=1;i<=number;i++))
+do
+	factz=$((factz*i))
+done
+
+echo "Factorial of $number is $factz"
+
+
+
+
+

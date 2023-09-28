@@ -1,0 +1,124 @@
+1.List only the directories in your current directory
+ls -d */
+
+2.Display the name and count of the directories in the current directory.
+ls | wc -l
+
+12. Write a menu based shell script which will perform arithmetic operations on two numbers which are inputted by user. Menu should display following operations
+
+              Menu
+          --------------
+          1: Addition
+          2: Substraction
+          3: Multiplication
+          4: Division
+          5: Exit 
+
+#!/bin/bash 
+
+echo "--------CALCULATOR--------"
+echo "Press + for Addition"
+echo "Press - for Subtraction"
+echo "Press * for Multiplication"
+echo "Press / for Division"
+echo "Press e for EXIT"
+
+read -p "n1=> " a
+read -p "Op=> " op
+read -p "n2=> " b
+
+if [[ $op == + ]]
+then
+	result=$(( $a+$b ))
+elif [[ $op == - ]]
+then
+	result=$(( $a-$b ))
+elif [[ $op == \* ]]
+then
+	result=$(( $a*$b ))
+elif [[ $op == / ]]
+then
+	result=$(( $a/$b ))
+else
+	echo "Invalid Input"
+
+fi
+echo "________"
+echo "Ans= $result"
+
+
+14.Write a shell script that will accept a string from the user. Copy all contents of the file to other file without that string. Also display number of characters, lines, and words.
+
+#!/bin/bash
+
+read -p "Enter file you want to delete/remove: " fname
+location=$( pwd ) 
+user="abhishek"
+
+mkdir "/home/"$user"/backup/"
+ln $location"/"$fname "/home/"$user"/backup/"
+
+rm -i $location"/"$fname
+
+
+15. Write a shell script which will generate the O/P as follows
+
+               *
+     * * *  * * * * * *
+               *
+#!/bin/bash
+
+echo "       *     "
+echo "*** ******"
+echo "       *     "
+
+16.Write a shell script which will accept three nos. from the keyboard and finds the largest of them.
+#!/bin/bash
+
+#!  /bin/bash
+
+read -p "Enter three numbers among which greatest has to be find : " num1 num2 num3
+
+
+greatest=num1
+
+if [[ $greatest -lt $num2 ]];
+then
+     greatest=$num2
+fi
+
+if [[ $greatest -lt $num3 ]];
+then
+        greatest=$num3
+fi
+
+echo "The Greatest number is $greatest "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+Section 1:-
+
+1. List all the files and sub directories of the directory /bin.
+ls /bin/
+
+
+2. List all the files including hidden files in your current directory.
+ls -a 
+
+
+3. List all the files starting with letter ‘r’ in your current directory.
+ls -a r*
+
+
+4. List all the files having three characters in their names, from your current directory.
+ls -a ???
+
+
+5. List all the files with extension .doc in your current directory.
+ls -a *.doc
+
+
+6. List all the files having the first letter of their name within the range ‘l’ to‘s’, from your current directory
+ls -a [l-s]*
+
+
+7. Create a file text1 and read its input from keyboard.
+vi text1
+
+
+8. Copy the contents of file text1 to another file text2.
+cp text1 text2
+
+
+9. Append the contents of file text2 to file text1.
+cat text2 >> text1
+
+
+10. Count the number of files in the current directory
+ls -a | wc -l
+
+
+11. Display the output of command ls –l to a file and on the output screen.
+ls -l > file1 
+cat file1
+
+
+12. From file text1 print all lines starting from 10th line.
+
+for i in {1..50..1}
+do
+	echo 'line' >> 12.dat
+done 
+echo "Using cat to dispay and pipe sed to print particular sets of lines: "
+cat 12.dat | sed -n 10,20p
+
+
+13. Find the number of users currently logged on to the system.
+users
+
+
+14. Delete all the files with their names starting with “tmp”.
+rm tmp*.*
+
+
+
+section 2:-
+
+1.Count the total number of words in file text1.
+wc text1
+
+2. list the contents of ls command page wise
+ls | more
+
+
+3.Create a file FILE2 with some text in it. Increase the no. of hard links to the file FILE2 to
+   3 and check the inode number and link count for those names
+
+vi FILE2
+
+a=$( pwd )
+
+ln $a"/FILE2" $a"/hardlink1.txt"
+ln $a"/FILE2" $a"/hardlink2.txt"
+
+#echo "Inode number"
+
+ls -i 
+
+4.Using one single command, display the output of “who” and “pwd” commands.
+who;pwd
+
+5. Display the system date in following format:
+Today is Friday, 17 May 96
+echo -n  "Today is "; date
+
+6. Display the following text message on the monitor screen.
+Deposited $100 to you account
+echo "Deposited \$100 to your account"
+
+7. Display the following message on the monitor.
+The long listing of my home dir ………… is …………
+(Hint: Use ls – l and pwd commands)
+f#!/bin/bash
+
+echo "The long listing of my home dir `pwd` is "
+ls -l
+
+
+Section 3:-
+
+1. Using vi editor:
+a) Create a file “Data1.txt
+
+vi Data1.txt
+
+b) Save the file and exit from the vi editor.
+
+:wq!
+
+c) Open the vi editor without specifying a file name
+vi
+
+d) Write some text and and save it to a file “MyData2.txt”
+:w MyData2.txt
+
+e) Repeat point ( c ) but after writing some text don’t save and just exit “vi”
+
+vi
+
+:q! 
+
+
+
+
