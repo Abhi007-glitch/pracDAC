@@ -1,0 +1,17 @@
+
+#Q1. finding file with extension .c and .pl
+
+find / -type f -name "*.c" && find / -type f -name "*.pl"
+
+#another Method 
+# in this method -o acts as OR logical operator. 
+# \(  \) - is use to group condtions together 
+find / -type f \( -name "*.c" -o -name "*.pl" \) 
+
+#Q2. Directory with permission 755 
+find / -type f -perm 755
+
+
+#Q3. Find files having inode number 12122
+find -inum 12122
+

@@ -1,0 +1,13 @@
+total 44
+-rw-r--r-- 1 abhi abhi   44 Sep 20 10:16 data.txt
+-rw-r--r-- 1 abhi abhi    0 Sep 24 00:48 directoryMeta.txt
+-rw-r--r-- 1 abhi abhi  133 Sep 19 13:57 question1.sh
+-rw-r--r-- 1 abhi abhi  207 Sep 19 14:09 question2.sh
+-rw-r--r-- 1 abhi abhi  273 Sep 19 14:24 question3.sh
+-rw-r--r-- 1 abhi abhi 1134 Sep 19 23:52 question4.sh
+-rw-r--r-- 1 abhi abhi  310 Sep 20 00:46 question5.sh
+-rw-r--r-- 1 abhi abhi  337 Sep 20 00:54 question6.sh
+-rw-r--r-- 1 abhi abhi  744 Sep 20 07:35 question7.sh
+-rw-r--r-- 1 abhi abhi  204 Sep 20 08:05 question8.sh
+-rw-r--r-- 1 abhi abhi  707 Sep 24 00:32 question9.sh
+-rw-r--r-- 1 abhi abhi   44 Sep 20 10:16 temp.txt
