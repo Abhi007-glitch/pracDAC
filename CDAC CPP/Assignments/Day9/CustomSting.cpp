@@ -8,27 +8,40 @@ class String {
     int size;
     int len;
 
+public:
 
- // default constructor
-    String(char input[])
+//default constructor 
+String ()
+{
+    this->size = 0;
+    this->len=0;
+    this->str=NULL;
+}  
+
+ // parameterized  constructor
+    String(char *input)
     {
-        size = sizeof(input)/sizeof(input[0]);
-       int length=0;
-       str = new char [size];
+        int total = 0;
+       int j =0;
+       while(input[j] && input[j]!='\0')
+       {
+          j++;
+          total++;
+       }
+      this->size = total+1;
 
-       for ( int i=0;i<size;i++)
+
+       int length=0;
+       str = new char [this->size];
+
+       for ( int i=0;i<this->size-1;i++)
        {
         str[i]=input[i];
-        if (input[i]=='\0')
-        {
-            str[i]='\0';
-            return;
-        }
+       
         length++;
-        
        }
 
-       len=length;
+       this->len=length;
 
     }
    
@@ -41,7 +54,7 @@ class String {
     this->size= input.size;
     this->len = input.len;
     
-
+   
     this->str = new char[this->size];
     // deepCopy
 
@@ -57,12 +70,6 @@ class String {
    }
     
 
-String ()
-{
-    this->size = 0;
-    this->len=0;
-    this->str=NULL;
-}  
 
   // Size of 
 
@@ -110,12 +117,16 @@ String operator + (String &str2)
         temp[i]= cp1[i];
     }
 
-    cp1= str2.str;
-
-    for ( int i =this->len;i<this->len+str2.len;i++)
+    char *cp2= str2.str;
+  
+    for ( int i =0;i<str2.len;i++)
     {
-       temp[i]=cp1[i-this->len];
+       temp[i+this->len]=cp2[i];
     }
+
+     
+    temp[this->len+str2.len]='\0';
+   
 
    return *ans;
    
@@ -139,11 +150,17 @@ String operator = (String &str2)
 
 }
 
-int size(char str[])
+
+
+int getSize()
 {
-    return  sizeof(str)/sizeof(str[0]);
+    return this->size;
 }
 
+char * getStringVal()
+{
+    return this->str;
+}
 
 
 
@@ -152,5 +169,14 @@ int size(char str[])
 
 int main()
 {
+    String str("abhinav");
+
+    String str2(str);
+
+    String str3 = (str+str2);
+
+    cout<<str3.getStringVal()<<endl;
+    cout<<str3.getSize()<<endl;
+
    return 0;
 }
