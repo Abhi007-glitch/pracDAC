@@ -1,0 +1,43 @@
+Question1) 
+
+ans1)
+Select name, birth, dept_name,dept_block from student,dept where student.dept_id=
+dept.dept_id;
+
+ans2) 
+ Select name, birth, dept_name,dept_block from student Left Outer Join dept on student.dept_id=dept.dept_id;
+
+Question2)
+select name from student where name like "____a"
+
+Question3) 
+
+ans1) using a custom stored function
+
+
+delimiter &&
+
+create Function calAge( date_of_birth DATE) Returns int DETERMINISTIC
+Begin
+    DECLARE present_date DATE;
+    DECLARE age Int;
+    DECLARE start Int;
+    DECLARE end Int;
+    DECLARE date1 varchar(5);
+    DECLARE date2 varchar(5);
+    set age=0;
+    Set present_date=CURDATE();
+    Set date1=DATE_FORMAT(date_of_birth,'%y');
+    Set date2=DATE_FORMAT(present_date,'%y');
+    set start= CAST(date1 AS SIGNED);
+    set end= CAST(date2 AS SIGNED);
+    set age= end-start;
+     
+    return age;
+End&&
+
+delimiter ;
+
+
+SELECT cal_Age('2000-02-02') AS age;
+select cal_Age(birth) as Age From student;

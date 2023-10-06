@@ -1,0 +1,43 @@
+//********************************************Example Syntax *************************************************************
+DELIMITER $$
+
+-- Creating a function to add two parameters a and b
+CREATE FUNCTION ADD_NUM(a INT, b INT) RETURNS INT
+BEGIN
+RETURN a + b;
+END$$
+
+DELIMITER ;
+
+-- call the addition function
+SELECT ADD_NUM(10, 12);
+
+
+
+//***************** Age Calculator  *******************
+
+
+delimiter &&
+
+create Function calAge( date_of_birth DATE) Returns int DETERMINISTIC
+Begin
+    DECLARE present_date DATE;
+    DECLARE age Int;
+    DECLARE start Int;
+    DECLARE end Int;
+    DECLARE date1 varchar(5);
+    DECLARE date2 varchar(5);
+    set age=0;
+    Set present_date=CURDATE();
+    Set date1=DATE_FORMAT(date_of_birth,'%y');
+    Set date2=DATE_FORMAT(present_date,'%y');
+    set start= CAST(date1 AS SIGNED);
+    set end= CAST(date2 AS SIGNED);
+    set age= end-start;
+     
+    return age;
+End&&
+
+delimiter ;
+
+

@@ -1,0 +1,11 @@
+
+create database College;
+use College;
+create table student (roll MEDIUMINT, name varchar(20), class TINYINT,marks SMALLINT, age TINYINT);
+desc student;
+alter table student modify column marks float;
+alter table student drop column marks ;
+show tables;
+truncate table student;
+drop table student;
+drop database College;

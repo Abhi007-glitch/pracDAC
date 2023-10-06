@@ -1,0 +1,10 @@
+create database College;
+use College;
+create table student (roll MEDIUMINT, name varchar(20), class TINYINT,marks SMALLINT, age TINYINT);
+insert into student values (1,"abhinav",10,90,16);
+insert into student values (2,"aditya",10,88,16), (3,"Bhupinder",10,82,16), (38,"vaibhav",10,86,16);
+insert into student values (4,"ankit",10,80,16);
+Delete from student where roll=4;
+update student set marks=marks+5;
+truncate_table student;
+insert into student values (2,"aditya",10,88,16), (3,"Bhupinder",10,82,16), (38,"vaibhav",10,86,16);

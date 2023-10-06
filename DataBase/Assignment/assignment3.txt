@@ -1,0 +1,16 @@
+create database College;
+use College;
+create table student (roll MEDIUMINT, name varchar(20), class TINYINT,marks SMALLINT, age TINYINT);
+alter table student add constraint primary key (roll);
+select sum(marks) as total from student;
+select avg(marks) as total from student;
+select count(marks) from student;
+select age, max(marks) from student group by age;
+select distinct marks from student;
+select * from student order by age;
+select * from student order by age desc;
+select * from student where marks between 90 and 100;
+select * from student where marks is null;
+select * from student where marks is not null;
+select * from student where marks in (91,95);
+select * from student where marks not in (91,95);
