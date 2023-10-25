@@ -316,7 +316,6 @@ mysql> select * from Worker where substring(joining_date,1,4)="2014" and substri
 3 rows in set (0.00 sec)
 
 ans2)
-
 mysql> select * from Worker where Left(Year(joining_date),4)="2014" and Left
 (MonthName(joining_date),3)="Feb";
 +-----------+------------+-----------+--------+---------------------+------------+
@@ -492,12 +491,7 @@ mysql> create table WorkerCopy as Select * from Worker;
 Query OK, 8 rows affected (0.04 sec)
 Records: 8  Duplicates: 0  Warnings: 0
 
-ans2)
-mysql> create table WorkerCopy Select * from Worker;
-ERROR 1050 (42S01): Table 'WorkerCopy' already exists
-mysql> create table WorkerCopy1 Select * from Worker;
-Query OK, 8 rows affected (0.04 sec)
-Records: 8  Duplicates: 0  Warnings: 0
+
 
 Q24)
 

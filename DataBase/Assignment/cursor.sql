@@ -11,6 +11,7 @@ Begin
 	Declare Department varchar(20);
 	Declare curCount int default 0;
 
+
 	Declare odd_cursor cursor for
 	Select * from Worker;
 	Declare continue handler for not found set done=1;
@@ -25,6 +26,7 @@ Begin
 	end if;
 	set curCount = curCount+1;
 	iterate loop_label;
+	
 end loop;
 close odd_cursor;
 end &&
