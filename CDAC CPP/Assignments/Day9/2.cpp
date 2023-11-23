@@ -26,10 +26,9 @@ public:
 	    cout<<this->day<<"/"<<this->month<<"/"<<this->year<<endl;
 	}
 	bool operator==(Date d2){
-	    
-	    
 	    return ((day==d2.day)&&(month==d2.month)&&(year=d2.year));
 	}
+
 	Date& operator++(){
 		++day;
 		int maxDay = daysInMonth(month, year);
@@ -44,6 +43,7 @@ public:
         
         return *this;
 	}
+    
 	 int daysInMonth(int m, int y) {
         switch (m) {
             case 4: case 6: case 9: case 11:

@@ -37,8 +37,6 @@ for ( int i =0;i<5;i++)
 //to get output in float or decimal we were needed to covert both numerator and denominator to float
 float ans = (float)sum/(float)5;
 
-
-
 cout<<ans<<endl;
 int ansInt = (int) ans;
 
