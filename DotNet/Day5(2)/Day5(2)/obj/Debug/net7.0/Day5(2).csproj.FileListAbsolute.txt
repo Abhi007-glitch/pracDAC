@@ -1,0 +1,14 @@
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\bin\Debug\net7.0\Day5(2).exe
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\bin\Debug\net7.0\Day5(2).deps.json
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\bin\Debug\net7.0\Day5(2).runtimeconfig.json
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\bin\Debug\net7.0\Day5(2).dll
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\bin\Debug\net7.0\Day5(2).pdb
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).AssemblyInfoInputs.cache
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).AssemblyInfo.cs
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).csproj.CoreCompileInputs.cache
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).dll
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\refint\Day5(2).dll
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).pdb
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\Day5(2).genruntimeconfig.cache
+C:\Users\abhinav\source\repos\Day5(2)\Day5(2)\obj\Debug\net7.0\ref\Day5(2).dll

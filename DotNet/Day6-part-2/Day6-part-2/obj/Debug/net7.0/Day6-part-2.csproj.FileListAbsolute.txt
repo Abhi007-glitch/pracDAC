@@ -1,0 +1,14 @@
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\bin\Debug\net7.0\Day6-part-2.exe
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\bin\Debug\net7.0\Day6-part-2.deps.json
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\bin\Debug\net7.0\Day6-part-2.runtimeconfig.json
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\bin\Debug\net7.0\Day6-part-2.dll
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\bin\Debug\net7.0\Day6-part-2.pdb
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.AssemblyInfoInputs.cache
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.AssemblyInfo.cs
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.csproj.CoreCompileInputs.cache
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.dll
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\refint\Day6-part-2.dll
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.pdb
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\Day6-part-2.genruntimeconfig.cache
+C:\Users\abhinav\source\repos\Day6-part-2\Day6-part-2\obj\Debug\net7.0\ref\Day6-part-2.dll

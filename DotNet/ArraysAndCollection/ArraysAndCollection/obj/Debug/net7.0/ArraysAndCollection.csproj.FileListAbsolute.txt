@@ -1,0 +1,14 @@
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\bin\Debug\net7.0\ArraysAndCollection.exe
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\bin\Debug\net7.0\ArraysAndCollection.deps.json
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\bin\Debug\net7.0\ArraysAndCollection.runtimeconfig.json
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\bin\Debug\net7.0\ArraysAndCollection.dll
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\bin\Debug\net7.0\ArraysAndCollection.pdb
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.AssemblyInfoInputs.cache
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.AssemblyInfo.cs
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.csproj.CoreCompileInputs.cache
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.dll
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\refint\ArraysAndCollection.dll
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.pdb
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ArraysAndCollection.genruntimeconfig.cache
+C:\Users\abhinav\source\repos\ArraysAndCollection\ArraysAndCollection\obj\Debug\net7.0\ref\ArraysAndCollection.dll
