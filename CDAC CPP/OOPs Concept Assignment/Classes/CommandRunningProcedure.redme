@@ -1,9 +1,0 @@
-
-# compiling program -> g++ file1_name file2_name file3_name 
-
-running program -> ./a.out
-
-# Dealing with seprate compiling and mergring - (Required for Debugging)
-
- Process 👍: compile individual source files into object files and then link these object files together to create the final executable
-
